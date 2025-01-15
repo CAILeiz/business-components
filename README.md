@@ -8,10 +8,10 @@
 
 1. text-tooltips
 2. more-tags
-3. photo-viedeo-audio
+3. photo-video-audio
 4. element-tree-父子级联动
 5. element-cascader-父子级联动
-6. photo-viedeo-audio-upload 判断校验
+6. photo-video-audio-upload 判断校验
 
 #### 2、工具库
 
@@ -19,7 +19,7 @@
 2. debounce
 3. throttle
 4. eventBus
-5. window-postMesage
+5. window-postMessage
 6. renderText，标颜色
 7. message-cloud
 8. genId
