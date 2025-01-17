@@ -1,0 +1,41 @@
+{
+  "name": "business-components",
+  "version": "1.0.0",
+  "description": "用途：将通用的业务组件封装成 npm 包，方便在其他项目中复用；同时将常见的工具库封装成 npm 包，不需要安装大体积的 lodash 类似的库",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build:dev": "webpack --env goal=local --env development --progress",
+    "build:prod": "webpack  --env goal=local --env production --progress",
+    "serve": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CAILeiz/business-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CAILeiz/business-components/issues"
+  },
+  "homepage": "https://github.com/CAILeiz/business-components#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "less": "^4.2.1",
+    "less-loader": "^12.2.0",
+    "style-loader": "^4.0.0",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue": "^3.5.13"
+  }
+}

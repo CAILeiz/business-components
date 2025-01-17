@@ -1,4 +1,4 @@
-# bussiness-components
+# business-components
 
 用途：将通用的业务组件封装成 npm 包，方便在其他项目中复用；同时将常见的工具库封装成 npm 包，不需要安装大体积的 lodash 类似的库
 
@@ -9,8 +9,8 @@
 1. text-tooltips
 2. more-tags
 3. photo-video-audio
-4. element-tree-父子级联动
-5. element-cascader-父子级联动
+4. element-tree-parent-choose (父子级联动)
+5. element-cascader-parent-checked (父子级联动)
 6. photo-video-audio-upload 判断校验
 
 #### 2、工具库
@@ -27,19 +27,19 @@
 ## Installation
 
 ```
-npm install bussiness-components
+npm install business-components
 ```
 
 ## Usage
 
-`import { cloneDeep, install } from "bussiness-components";`
+`import { cloneDeep, install } from "business-components";`
 
 `install(Vue);`
 
 #### Example:
 
 ```javascript
-import { cloneDeep, install } from "bussiness-components"; // 导入工具库和组件
+import { cloneDeep, install } from "business-components"; // 导入工具库和组件
 
 // 注册全局组件
 install(Vue);
