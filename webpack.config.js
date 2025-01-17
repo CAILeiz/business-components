@@ -13,6 +13,18 @@ module.exports = function (env) {
       filename: "[name].[contenthash].bundle.js",
       path: path.resolve(__dirname, "dist"),
       clean: true,
+      library: {
+        name: "BusinessComponents",
+        type: "umd",
+      },
+    },
+    externals: {
+      lodash: {
+        commonjs: "lodash",
+        commonjs2: "lodash",
+        amd: "lodash",
+        root: "_",
+      },
     },
     devtool: "inline-source-map",
     devServer: {
