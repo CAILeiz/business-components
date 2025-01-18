@@ -7,7 +7,7 @@ module.exports = function (env) {
   return {
     mode: "development",
     entry: {
-      main: "./src/main.js",
+      main: "./src/main.ts",
     },
     output: {
       filename: "[name].[contenthash].bundle.js",
@@ -17,6 +17,14 @@ module.exports = function (env) {
         name: "BusinessComponents",
         type: "umd",
       },
+    },
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "src"),
+        Comps: path.resolve(__dirname, "src/components"),
+        Utils: path.resolve(__dirname, "src/utils"),
+      },
+      extensions: [".js", ".ts", ".vue", ".json"], // 添加需要解析的扩展名
     },
     externals: {
       lodash: {
@@ -50,6 +58,11 @@ module.exports = function (env) {
               presets: [["@babel/preset-env"]],
             },
           },
+        },
+        {
+          test: /\.ts$/i,
+          use: "ts-loader",
+          exclude: /node_modules/,
         },
       ],
     },

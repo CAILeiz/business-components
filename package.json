@@ -2,7 +2,7 @@
   "name": "business-components",
   "version": "1.0.0",
   "description": "用途：将通用的业务组件封装成 npm 包，方便在其他项目中复用；同时将常见的工具库封装成 npm 包，不需要安装大体积的 lodash 类似的库",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "watch": "webpack --watch",
     "build:dev": "webpack --env goal=local --env development --progress",
@@ -23,19 +23,20 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
+    "@types/vue": "^2.0.0",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
     "less": "^4.2.1",
     "less-loader": "^12.2.0",
+    "lodash": "^4.17.21",
     "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "vue": "^3.5.13",
     "vue-loader": "^17.4.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0",
-    "lodash": "^4.17.21"
-  },
-  "dependencies": {
-    "vue": "^3.5.13"
+    "webpack-dev-server": "^5.2.0"
   }
 }

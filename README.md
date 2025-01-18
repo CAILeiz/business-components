@@ -7,6 +7,21 @@
 #### 1、业务组件
 
 1. text-tooltips
+
+- [ ] **组件功能：**
+  - [ ] 文本超出打点
+  - [ ] 文本支持多行超出打点
+  - [ ] 超出打点支持 hover 查看全部内容
+- [ ] **实现：**
+
+  - [ ] 复用 el-tooltips
+  - [ ] 动态绑定 style，超出多少行打点
+  - [ ] 逻辑计算是否有超出，用于判断 hover 是否展示全部内容
+
+- [ ] **xx**
+  - [ ] x1
+  - [ ] x2
+
 2. more-tags
 3. photo-video-audio
 4. element-tree-parent-choose (父子级联动)
