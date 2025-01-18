@@ -12,6 +12,7 @@
 4. element-tree-parent-choose (父子级联动)
 5. element-cascader-parent-checked (父子级联动)
 6. photo-video-audio-upload 判断校验
+7. message-cloud 消息云
 
 #### 2、工具库
 
@@ -19,10 +20,9 @@
 2. debounce
 3. throttle
 4. eventBus
-5. window-postMessage
-6. renderText，标颜色
-7. message-cloud
-8. genId
+5. windowPostMessage
+6. paintRenderText (标颜色)
+7. genId
 
 ## Installation
 
