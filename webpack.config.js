@@ -37,6 +37,8 @@ module.exports = function (env) {
     devtool: "inline-source-map",
     devServer: {
       static: "./dist",
+      hot: true, // 启用热模块替换
+      open: true, // 自动打开浏览器
     },
     module: {
       rules: [
@@ -61,8 +63,11 @@ module.exports = function (env) {
         },
         {
           test: /\.ts$/i,
-          use: "ts-loader",
+          loader: "ts-loader",
           exclude: /node_modules/,
+          options: {
+            appendTsSuffixTo: [/\.vue$/], // 让 ts-loader 处理 .vue 文件中的 TypeScript
+          },
         },
       ],
     },

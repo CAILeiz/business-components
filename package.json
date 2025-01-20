@@ -7,7 +7,7 @@
     "watch": "webpack --watch",
     "build:dev": "webpack --env goal=local --env development --progress",
     "build:prod": "webpack  --env goal=local --env production --progress",
-    "serve": "webpack serve --open"
+    "serve": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
