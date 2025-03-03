@@ -26,29 +26,36 @@ module.exports = function (env) {
       },
       extensions: [".js", ".ts", ".vue", ".json"], // 添加需要解析的扩展名
     },
-    externals: {
-      lodash: {
-        commonjs: "lodash",
-        commonjs2: "lodash",
-        amd: "lodash",
-        root: "_",
-      },
-    },
     devtool: "inline-source-map",
     devServer: {
+      headers: {
+        "Cache-Control": "no-store",
+      },
       static: "./dist",
       hot: true, // 启用热模块替换
       open: true, // 自动打开浏览器
     },
+    watchOptions: {
+      ignored: /node_modules/, // 忽略 node_modules
+      poll: 1000, // 轮询间隔（适用于虚拟机或 Docker 环境）
+    },
     module: {
       rules: [
+        {
+          test: /\.css$/,
+          use: [
+            "style-loader", // 将 CSS 注入到页面
+            "css-loader", // 解析 CSS 文件
+            "postcss-loader", // 添加 PostCSS
+          ],
+        },
         {
           test: /\.vue$/i,
           use: "vue-loader",
         },
         {
           test: /\.less$/i,
-          use: ["style-loader", "css-loader", "less-loader"],
+          use: ["style-loader", "css-loader", "postcss-loader", "less-loader"],
         },
         {
           test: /\.(?:js|mjs|cjs)$/,

@@ -4,12 +4,17 @@
     "allowJs": true,
     "target": "es5",
     "module": "commonjs",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"] // 将 @ 映射到 src 目录
     }
   },
-
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts", // 包含所有类型声明文件
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/shims-vue.d.ts" // 显式包含 Vue 类型声明文件
+  ],
   "exclude": ["node_modules"]
 }
