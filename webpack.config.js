@@ -43,6 +43,19 @@ module.exports = function (env) {
     module: {
       rules: [
         {
+          test: /\.(png|jpe?g|gif|svg)$/i,
+          use: [
+            {
+              loader: "url-loader",
+              options: {
+                limit: 8192, // 8KB 以下的文件转为 Base64
+                name: "images/[name].[ext]", // 输出路径和文件名
+                esModule: false, // 关闭 ES 模块语法（兼容旧项目）
+              },
+            },
+          ],
+        },
+        {
           test: /\.css$/,
           use: [
             "style-loader", // 将 CSS 注入到页面
