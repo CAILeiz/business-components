@@ -14,6 +14,7 @@ export default {
 </script>
   
 <style lang="less" scoped>
+@import url("./common.less");
 .example {
   color: red;
 }

@@ -4,10 +4,11 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = function (env) {
   console.log("env", env);
+  const entryName = env.development ? "devMain" : "prodMain";
   return {
     mode: "development",
     entry: {
-      main: "./src/main.ts",
+      main: "./src/" + entryName,
     },
     output: {
       filename: "[name].[contenthash].bundle.js",
