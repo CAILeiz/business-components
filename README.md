@@ -6,24 +6,34 @@
 
 #### 1、业务组件
 
-1. text-tooltips
-
-- [ ] **组件功能：**
-  - [ ] 文本超出打点
-  - [ ] 文本支持多行超出打点
-  - [ ] 超出打点支持 hover 查看全部内容
-- [ ] **实现：**
-
-  - [ ] 复用 el-tooltips
-  - [ ] 动态绑定 style，超出多少行打点
-  - [ ] 逻辑计算是否有超出，用于判断 hover 是否展示全部内容
+-- 案例
 
 - [ ] **xx**
   - [ ] x1
   - [ ] x2
 
+1. text-tooltips
+
+- [x] **组件功能：**
+  - [x] 文本超出打点
+  - [x] 文本支持多行超出打点
+  - [x] 超出打点支持 hover 查看全部内容
+- [x] **实现：**
+
+  - [x] 复用 el-tooltips
+  - [x] 动态绑定 style，超出多少行打点
+  - [x] 逻辑计算是否有超出，用于判断 hover 是否展示全部内容
+
 2. more-tags
 3. photo-video-audio
+
+- [x] **组件功能：**
+  - [x] 根据文件类型渲染不同组件，支持图片、视频、音频
+  - [x] 类型都不满足，渲染下载按钮，支持下载
+- [x] **实现：**
+  - [x] 定义三种类型的组建
+  - [x] 根据文件类型渲染不同组件
+
 4. element-tree-parent-choose (父子级联动)
 5. element-cascader-parent-checked (父子级联动)
 6. photo-video-audio-upload 判断校验
@@ -31,13 +41,13 @@
 
 #### 2、工具库
 
-1. cloneDeep
-2. debounce
-3. throttle
-4. eventBus
-5. windowPostMessage
-6. paintRenderText (标颜色)
-7. genId
+- [ ] 1. cloneDeep
+- [ ] 2. debounce
+- [x] 3. throttle
+- [ ] 4. eventBus
+- [ ] 5. windowPostMessage
+- [ ] 6. paintRenderText (标颜色)
+- [ ] 7. genId
 
 ## Installation
 
