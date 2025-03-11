@@ -41,13 +41,13 @@
 
 #### 2、工具库
 
-- [ ] 1. cloneDeep
-- [ ] 2. debounce
+- [x] 1. cloneDeep
+- [x] 2. debounce
 - [x] 3. throttle
-- [ ] 4. eventBus
-- [ ] 5. windowPostMessage
-- [ ] 6. paintRenderText (标颜色)
-- [ ] 7. genId
+- [x] 4. eventBus
+- [x] 5. windowPostMessage
+- [x] 6. paintRenderText (标颜色)
+- [x] 7. genId
 
 ## Installation
 
