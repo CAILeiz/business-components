@@ -1,5 +1,59 @@
-<!-- 2. 测试 msg-video -->
+<!-- 3. 测试 element-cascader-parent-checked -->
 <template>
+  <comp
+    placeholder="请选择XX"
+    :options="areaOpts"
+    :selfProps="belongAreaProp"
+    v-model:cascaderValue="areaCodes"
+  >
+  </comp>
+  <div>code: {{ areaCodes }}</div>
+</template>
+<script lang="ts" setup>
+import { ref } from "vue";
+import comp from "../element-cascader-parent-checked/index";
+
+const areaOpts = [
+  {
+    name: "浙江省",
+    code: "330000",
+    children: [
+      {
+        name: "杭州市",
+        code: "330100",
+      },
+      {
+        name: "宁波市",
+        code: "330200",
+      },
+      {
+        name: "温州市",
+        code: "330300",
+      },
+      {
+        name: "嘉兴市",
+        code: "330400",
+      },
+    ],
+  },
+];
+
+const belongAreaProp = {
+  multiple: true,
+  value: "code",
+  label: "name",
+  checkStrictly: true,
+  emitPath: false,
+};
+const areaCodes = ref([]);
+</script>
+
+<style lang="less" scoped>
+</style>
+
+
+<!-- 2. 测试 msg-video -->
+<!-- <template>
   <comp :src="src" :filename="src"> </comp>
 </template>
 <script lang="ts" setup>
@@ -12,7 +66,7 @@ const src = ref(photoSrc);
 </script>
 
 <style lang="less" scoped>
-</style>
+</style> -->
 
 
 

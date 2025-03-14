@@ -35,7 +35,21 @@
   - [x] 根据文件类型渲染不同组件
 
 4. element-tree-parent-choose (父子级联动)
+
 5. element-cascader-parent-checked (父子级联动)
+
+- [x] **组件功能：**
+  - [x] 支持通过 v-model 传入选中的值
+  - [x] 支持通过 options 传入下来选项
+  - [x] 支持通过 selfProps 传入 cascader 组件属性
+  - [x] 支持通过 placeholder 传入下拉框占位符
+  - [x] 实现了选中/取消选中父项，子项随之联动选中/取消选中
+  - [x] 实现动态修改初始 v-model 值
+- [x] **实现：**
+  - [x] 封装 el-cascader
+  - [x] 封装动态修改初始 v-model 值逻辑
+  - [x] 封装父子级联动逻辑
+
 6. photo-video-audio-upload 判断校验
 7. message-cloud 消息云
 
